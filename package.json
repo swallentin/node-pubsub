@@ -1,0 +1,12 @@
+{
+  "name"          : "node-pubsub",
+  "description"   : "Empowers you node app with a simple pub/sub feature. Good for mocking a pub/sub back-end or writing single instance pub/sub applications.",
+  "url"           : "http://swallentin.github.com/node-pubsub",
+  "keywords"      : ["util", "functional", "server"],
+  "author"        : "Stephan Wallentin <stephan.wallentin@gmail.com>",
+  "contributors"  : [],
+  "dependencies"  : {
+    "backbone"  : ""
+  },
+  "version"       : "0.0.1"
+}

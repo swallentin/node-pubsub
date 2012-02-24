@@ -38,12 +38,12 @@ or to install the node-pubsub package globally:
       });
       pubsub.publish('/mychannel', [ { message: 'my message' } ], this);
   
-  Ambiguous communication plugin. Small API surface. Publish some message to listeners.
 
 ## Features
-
-  * Publishing to events to to a channel
-  * Subscribing events from a channel
+  * Ambiguous communication plugin. 
+  * Small API surface. 
+  * Publishing of events to a channel
+  * Subscribing to events from a channel
   * Unsubscribing from a channel
 
 # License

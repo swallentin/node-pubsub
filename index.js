@@ -1,1 +1,1 @@
-exports = module.exports = require('./lib/pubsub').create();
+exports = module.exports = require('./lib/pubsub');

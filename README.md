@@ -17,4 +17,4 @@ Ambiguous communication plugin. Small API surface. Publish some message to liste
 
 # License
 
-Being stolen directly from the Dojo Toolkit source, these plugins are released under a dual AFL/BSD license identical to Dojo proper. See http://dojotoolkit.org/license for more information.
+Being stolen directly from the Dojo Toolkit source/bloody-jquery-plugins, this code is released under a dual AFL/BSD license identical to Dojo proper. See http://dojotoolkit.org/license for more information.

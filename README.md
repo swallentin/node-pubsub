@@ -4,14 +4,14 @@
 
   This is simple pubsub feature to be used in node.
 
-    var pubsub = require('node-pubsub');
+    var hub = require('node-pubsub');
 
-    pubsub.subscribe('/mychannel', function( message ){
+    hub.subscribe('/mychannel', function( message ){
       console.log(message);
     });
-    pubsub.publish('/mychannel', [ { message: 'my message' } ], this);
+    hub.publish('/mychannel', [ { message: 'my message' } ], this);
     
-    pubsub.unsubscribe('/mychannel');
+    hub.unsubscribe(['/mychannel']);
 
 ## Installation
   
@@ -31,12 +31,15 @@ or to install the node-pubsub package globally:
   
     Open up app.js and add:
   
-      var pubsub = require('node-pubsub');
+      var hub = require('node-pubsub');
   
-      pubsub.subscribe('/mychannel', function( message ){
+      hub.subscribe('/mychannel', function( message ){
         console.log(message);
       });
-      pubsub.publish('/mychannel', [ { message: 'my message' } ], this);
+      hub.publish('/mychannel', [ { message: 'my message' } ], this);
+      
+      hub.unsubscribe(['/mychannel']);
+      
   
 
 ## Features
@@ -45,6 +48,12 @@ or to install the node-pubsub package globally:
   * Publishing of events to a channel
   * Subscribing to events from a channel
   * Unsubscribing from a channel
+
+## TODO
+  * Fix require so that it doesn't land as an instance. 
+    var hub = require('node-pubsub'); 
+  should be 
+    var hub = require('node-pubsub').create();
 
 # License
 

@@ -9,9 +9,9 @@
     pubsub.subscribe('/mychannel', function( message ){
       console.log(message);
     });
-    pubsub.publish('/mychannel', [ { message: 'my message'}], this);
+    pubsub.publish('/mychannel', [ { message: 'my message' } ], this);
     
-    pubsub.unsubscribe('mychanne');
+    pubsub.unsubscribe('/mychannel');
 
 ## Installation
   
@@ -31,12 +31,12 @@ or to install the node-pubsub package globally:
   
     Open up app.js and add:
   
-    var pubsub = require('node-pubsub');
+      var pubsub = require('node-pubsub');
   
-    pubsub.subscribe('/mychannel', function( message ){
-      console.log(message);
-    });
-    pubsub.publish('/mychannel', [ { message: 'my message'}], this);
+      pubsub.subscribe('/mychannel', function( message ){
+        console.log(message);
+      });
+      pubsub.publish('/mychannel', [ { message: 'my message' } ], this);
   
   Ambiguous communication plugin. Small API surface. Publish some message to listeners.
 
